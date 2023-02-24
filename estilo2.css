@@ -1,0 +1,169 @@
+*{
+    margin:0px;;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.uno{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.uno .izquierdo{
+    position: relative;
+    background: #5e0c0c;
+    padding: 25px;
+}
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+img{
+    border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.perfil h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.perfil h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+.contacto{
+    padding-top: 40px;
+}
+.info{
+    color: #eb6767;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contacto ul{
+    position: relative;
+}
+.contacto ul li{
+    list-style: none;
+    margin: 10px 0;
+    position: static;
+    cursor: pointer;
+}
+.contacto ul li .icon{
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    color: #f44f03;
+}
+.contacto ul li span{
+    color: #ffffff;
+    font-weight: 3000;
+}
+.contacto ul li a{
+    color: #ffffff;
+    font-weight: 3000;
+}
+.educacion li{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.educacion h3{
+    color: #eb6767;
+    font-weight: 500;
+}
+.educacion h5{
+    color: #fff;
+    font-weight: 500;
+}
+
+.idioma ul li h5{
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+}
+.idioma li {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+}
+.uno .derecho{
+    position: relative;
+    background: #fff;
+    padding: 30px;
+}
+.acercade{
+    margin-bottom: 50px;
+}
+.acercade:last-child{
+    margin-bottom: 0;
+}
+.titulo2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;     
+}
+p{
+    color: #333;
+}
+.acercade .caja{
+    display: flex;
+    flex-direction:row;
+    margin: 20px 0;
+}
+.acercade .caja .anio_de_ingreso{
+    min-width: 170px;
+
+}
+.acercade .caja .anio_de_ingreso h5{
+    text-transform: uppercase;
+    color: #b62a2a;
+    font-weight: 600;
+    padding: 0%;
+}
+.acercade .caja .texto h4{
+    text-transform: uppercase;
+    color: #fc8c23;
+    font-size: 16px;
+}
+@media (max-width:1000px){
+    .uno{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .acercade .caja{
+        flex-direction: column;
+    }
+    .acercade .caja .anio_de_ingreso{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+}
